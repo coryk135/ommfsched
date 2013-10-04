@@ -7,6 +7,35 @@ table,th,td
     border:1px solid black;
 }
 
+div.row > div {
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.scheduleEvent h2 {
+  color: #FFF;
+  margin-top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.scheduleEvent {
+  background: #018ed6;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.scheduleEvent > div {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: auto;
+}
+
+.timeArea {
+  border-right: 1px solid #F00;
+}
+
 .bump{
     margin-left: 15px
 }
