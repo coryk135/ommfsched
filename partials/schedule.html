@@ -1,5 +1,21 @@
 <div ng-controller="ScheduleCtrl" >
-
+  <div class="row scheduleEvent" ng-repeat="entry in entries | filter:event">
+    <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-center timeArea">
+      <div class="timestart">{{ entries.convertTime(entry.gd$when[0].startTime) }}</div>
+      <div class="timeend">{{ entries.convertTime(entry.gd$when[0].endTime) }}</div>
+    </div>
+    <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 text-left">
+      <accordion>
+        <accordion-group>
+          <accordion-heading>
+            {{ entry.title.$t }}
+          </accordion-heading>
+            {{ entry.content.$t }}
+        </accordion-group>
+      </accordion>
+    </div>
+  </div>
+  <!--
     <div class="bump">
         <p>Filter by Event! <span style="color:red">not working</span></p>
         <input type="text" ng-model="event" />
@@ -23,4 +39,6 @@
     <div class="container">
     	<iframe src="https://www.google.com/calendar/embed?title=Orlando%20Mini%20Maker%20Faire%202013&amp;showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=orlandominimakerfaire.com_vffhp2b6oi3kiu3trnoo1502hg%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="auto" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
+
+    -->
 </div>

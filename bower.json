@@ -1,0 +1,32 @@
+{
+  "name": "ommfsched",
+  "version": "0.1.0",
+  "homepage": "https://github.com/coryk135/ommfsched",
+  "authors": [
+    "Danny Grove <danny@drgrovellc.com>",
+    "Cory Kinberger <coryk135@gmail.com>"
+  ],
+  "description": "Orlando Mini Maker Faire Web App",
+  "main": "index.html",
+  "keywords": [
+    "Orlando",
+    "Mini",
+    "Maker",
+    "Faire"
+  ],
+  "license": "N/A",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.0.8",
+    "modernizr": "2.6.2",
+    "angular-ui-bootstrap": "0.6.0",
+    "bootstrap": "~3.0.0"
+  }
+}
