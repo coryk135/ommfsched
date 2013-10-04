@@ -1,0 +1,119 @@
+.nav, .pagination, .carousel a { 
+  cursor: pointer; 
+}
+
+table,th,td
+{
+    border:1px solid black;
+}
+
+.bump{
+    margin-left: 15px
+}
+
+.card {
+    background-color: #018ed6;
+    box-shadow: 0 3px 5px -2px black;
+    margin: 16px 16px;
+    height: auto;
+    width: auto;
+    padding: 35px 10px;
+    overflow: auto
+}
+
+.card .left{
+    width: 60%;
+    margin: -20px 0;
+    padding: 0 15px;
+    border-right: 3px solid #ed1c24;
+}
+
+.card .right{
+    width: 33%;
+    float: right;
+}
+
+.card p{
+    color: white;
+}
+
+.calendarcard {
+    background-color: #018ed6;
+    box-shadow: 0 3px 5px -2px black;
+    margin: 16px 16px;
+    height: auto;
+    width: auto;
+    padding: 35px 10px;
+    overflow: auto
+}
+
+.calendarcard .left{
+    width: 10%;
+    margin: -20px 0;
+    padding: 0 15px;
+    border-right: 3px solid #ed1c24;
+}
+
+.calendarcard .right{
+    width: 80%;
+    float: right;
+}
+
+.calendarcard p{
+    color: white;
+}
+
+.makerphoto{
+
+    max-height: 300px;
+    max-width: 300px;
+}
+
+/*.navbar {
+  margin-bottom: 20px;
+}
+
+.shot .title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.stats {
+  background: #CCC;
+  opacity: 0.5;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.stats .stat {
+  padding: 5px;
+}
+
+.shot_image {
+  width: 100%;
+}
+
+
+.shot_header {
+  margin-bottom: 20px;
+}
+
+.shot_header h1 {
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.shot_header img {
+  height: 60px;
+}
+
+
+.comment img {
+  height: 60px;
+  width: 60px;
+}
+*/
