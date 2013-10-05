@@ -24,7 +24,7 @@ ctrls.controller('ScheduleCtrl', function($scope, $http) {
                 var h = date.getHours();
                 var m = date.getMinutes();
                 if(m < 10) m = '' + "0" + m;
-                return ((h%12 + 1) + ":" + m);
+                return (((h-1)%12 + 1) + ":" + m);
             };
             calendarData.feed.entry.checkStartTime = function(time){
                 alert('event-active');
