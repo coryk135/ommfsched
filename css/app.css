@@ -227,3 +227,14 @@ div.row > div {
 .event-happening span{
   text-decoration: underline;
 }
+
+.info {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+
+.info li {
+  list-style-type: none;
+  margin-bottom: 2px;
+}
