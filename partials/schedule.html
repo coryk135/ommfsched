@@ -5,14 +5,21 @@
       <div class="timeend">{{ entries.convertTime(entry.gd$when[0].endTime) }}</div>
     </div>
     <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 text-left">
-      <accordion>
-        <accordion-group>
-          <accordion-heading>
-            {{ entry.title.$t }}
-          </accordion-heading>
-            {{ entry.content.$t }}
-        </accordion-group>
-      </accordion>
+      
+        
+          <div class="row">
+            <h2>
+              {{ entry.title.$t }}
+            </h2>
+          </div>
+          
+          <div class="row">
+            <p >
+              {{ entry.content.$t }}
+            </p>
+          </div>
+        
+      
     </div>
   </div>
   <!--

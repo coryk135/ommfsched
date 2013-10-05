@@ -101,6 +101,9 @@ div.row > div {
     max-height: 300px;
     max-width: 300px;
 }
+.mainContainer {
+  margin-top: 20px;
+}
 
 /*.navbar {
   margin-bottom: 20px;
