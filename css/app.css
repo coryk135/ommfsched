@@ -91,12 +91,17 @@ div.row > div {
   border: 1px solid grey;
   border-bottom: 0px !important;
 }
+.roundedTop{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 .detailsRight{
   background-color: white;
-  min-height: 200px !important;
+  /*min-height: 200px !important;*/
   border: 1px solid grey;
   padding-left: 40px;
   padding-right: 20px !important;
+  padding-bottom:20px;
 }
 
 
@@ -161,8 +166,9 @@ div.row > div {
 }
 
 .makerphoto{
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 80%;
+    max-width: 80%;
+    margin-bottom: 10px;
 }
 
 .mainContainer {
@@ -176,7 +182,17 @@ div.row > div {
 
 .maker{
   margin-top: 20px;
-  border: 1px solid black;
+  
+}
+.makerProjectTitle{
+  background-color: rgb(1, 142, 214);
+  color: white !important;
+  border: 1px solid grey;
+  border-bottom: 0px;
+}
+.makerProjectDetails{
+  padding-top: 20px;
+  border: 1px solid grey;
 }
 
 /*.navbar {
