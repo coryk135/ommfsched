@@ -1,18 +1,21 @@
 <div ng-controller="ScheduleCtrl" >
-  <div class="row scheduleEvent" ng-repeat="entry in entries | filter:event">
-    <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-center timeArea">
+  <div class="row entriesRow" ng-repeat="entry in entries | filter:event">
+    <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-center timeLeft">
       <div class="timestart">{{ entries.convertTime(entry.gd$when[0].startTime) }}</div>
       <div class="timeend">{{ entries.convertTime(entry.gd$when[0].endTime) }}</div>
     </div>
-    <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 text-left">
+    <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10 text-left detailsRight">
       
         
           <div class="row">
             <h2>
               {{ entry.title.$t }}
             </h2>
+            <p >
+            Show Details...
+            </p>
           </div>
-          
+
           <div class="row">
             <p >
               {{ entry.content.$t }}
