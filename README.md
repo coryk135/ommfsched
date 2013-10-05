@@ -1,4 +1,4 @@
-angular-dribbble
-================
+Ommfsched
+==========
 
-An Angular JS project that uses the Dribbble api
+Angular App for the Orlando Mini Maker Faire 2013
