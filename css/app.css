@@ -242,10 +242,15 @@ div.row > div {
 
 .info{
   list-style-type: none;
+  padding: 0;
 }
 
 .info li{
   margin-top: 15px;
+}
+
+.info li button{
+  width: 100%;
 }
 
 .maker{
