@@ -4,6 +4,21 @@
 .navigation{
   background-color: rgb(160, 224, 249) !important;
 }
+.nav{
+  
+}
+.nav a{
+  color: rgb(1, 142, 214);
+}
+
+.nav li a:focus{
+  background-color: #cc0000 !important;
+  color: white;
+}
+.nav li a:hover{
+  color: white;
+  background-color: #cc0000 !important;
+}
 #titleText{
   color: white;
 }
@@ -30,9 +45,10 @@
 a {
   color: red;
 }
-.active{
-  background-color: rgb(46, 67, 94) !important;
+.boxShadow{
+  box-shadow: 0 3px 5px -2px black;
 }
+s
 table,th,td
 {
     border:1px solid black;
@@ -68,7 +84,9 @@ div.row > div {
 }
 
 .timeLeft{
-  background-color: rgb(46, 67, 94);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #018ed6;
   height: 100% !important;
   border: 1px solid grey;
   border-bottom: 0px !important;
