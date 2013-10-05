@@ -5,6 +5,13 @@ var ctrls = angular.module('ommfsched.controllers', []);
 ctrls.controller('AppCtrl', function($scope, $http) {
 });
 
+ctrls.controller('navCtrl', function($scope, $location) {
+    $scope.isActive = function(route) {
+            console.log($location.path())
+            return route === $location.path();
+        }
+});
+
 ctrls.controller('CollapseDemoCtrl', function($scope) {
   $scope.isCollapsed = true ;
 });

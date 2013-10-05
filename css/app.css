@@ -11,6 +11,10 @@
   color: rgb(1, 142, 214);
 }
 
+.active {
+  background: #cc0000;
+}
+
 .nav li a:focus{
   background-color: #cc0000 !important;
   color: white;
