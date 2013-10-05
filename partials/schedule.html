@@ -4,9 +4,11 @@
       <div class="row">
         <p class="timeText {{ entry.custom_class }}" ng-class="{{ entry.custom_class }}">
           <i class="glyphicon glyphicon-time"></i>
+          <span>
           {{ entries.getTime(entry.gd$when[0].startTime) }}
           -
-          {{ entries.getTime(entry.gd$when[0].endTime) }}
+          {{ entries.getTime(entry.gd$when[0].endTime) }}&nbsp;
+          </span>
         </p>
       </div>
     </div>

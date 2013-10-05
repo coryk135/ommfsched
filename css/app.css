@@ -208,10 +208,18 @@ div.row > div {
   border-bottom: 1px solid grey;
 }
 
-.event-over{
+.event-over {
+  color: #cc0000;
+}
 
+.event-over span{
+  text-decoration: line-through;
 }
 
 .event-happening{
+  color: lime;
+}
 
+.event-happening span{
+  text-decoration: underline;
 }
