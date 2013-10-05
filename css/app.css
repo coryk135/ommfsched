@@ -72,6 +72,10 @@ div.row > div {
     margin-left: 15px
 }
 
+.mapContainer img {
+  width: 100%;
+}
+
 .card {
     background-color: #018ed6;
     box-shadow: 0 3px 5px -2px black;
