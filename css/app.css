@@ -80,8 +80,14 @@ div.row > div {
   padding-left: 40px;
   padding-right: 20px !important;
 }
+
+
 .bump{
     margin-left: 15px
+}
+
+.mapContainer img {
+  width: 100%;
 }
 
 .card {
