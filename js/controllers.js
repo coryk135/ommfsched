@@ -19,7 +19,7 @@ ctrls.controller('CollapseDemoCtrl', function($scope) {
 ctrls.controller('ScheduleCtrl', function($scope, $http) {
     var calendarData = {};
 
-    var calendarApiJsonpUrl = 'http://www.google.com/calendar/feeds/orlandominimakerfaire.com_vffhp2b6oi3kiu3trnoo1502hg@group.calendar.google.com/public/full?alt=json-in-script&callback=JSON_CALLBACK&orderby=starttime&singleevents=true&sortorder=ascending&futureevents=true'
+    var calendarApiJsonpUrl = 'http://www.google.com/calendar/feeds/orlandominimakerfaire.com_vffhp2b6oi3kiu3trnoo1502hg@group.calendar.google.com/public/full?alt=json-in-script&callback=JSON_CALLBACK&orderby=starttime&singleevents=true&sortorder=ascending';
 
     $http.jsonp(calendarApiJsonpUrl)
         .success(function(data){
