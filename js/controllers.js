@@ -5,96 +5,9 @@ var ctrls = angular.module('ommfsched.controllers', []);
 ctrls.controller('AppCtrl', function($scope, $http) {
 });
 
-ctrls.controller('AccordionDemoCtrl', function($scope) {
-  $scope.oneAtATime = true;
-
-  $scope.groups = [
-    {
-      title: "Dynamic Group Header - 1",
-      content: "Dynamic Group Body - 1"
-    },
-    {
-      title: "Dynamic Group Header - 2",
-      content: "Dynamic Group Body - 2"
-    }
-  ];
-
-  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-  $scope.addItem = function() {
-    var newItemNo = $scope.items.length + 1;
-    $scope.items.push('Item ' + newItemNo);
-  };
-});
-
-ctrls.controller('navCtrl', function($scope, $location) {
-    $scope.isActive = function(route) {
-        console.log($location.path())
-        return route === $location.path();
-    }
-});
-
-/*
-ctrls.controller('ShotsListCtrl', function($scope, ommfshed, $routeParams) {
-    var list = $routeParams.list;
-    ommfshed.list(list).then(function (data){
-        console.log(data)
-        $scope.list = data.data;
-    })
-
-    $scope.loadNexPage = function(){
-        ommfshed.list(list, {page: parseInt($scope.list.page) + 1}).then(function(data) {
-            console.log(data);
-            $scope.list.page = data.data.page;
-            $scope.list.shots = $scope.list.shots.concat(data.data.shots)
-        });
-    }
-});
-
-ctrls.controller('ShotsCtrl', function($scope, ommfshed, $routeParams) {
-    var id = $routeParams.id;
-    ommfshed.shot(id).then(function (data){
-        $scope.shot = data.data;
-        console.log(data);
-    });
-});
-*/
-
 ctrls.controller('CollapseDemoCtrl', function($scope) {
   $scope.isCollapsed = true ;
 });
-
-/*
-var OmmfCalendarUrl = 'http://www.google.com/calendar/feeds/'+
-'orlandominimakerfaire.com_vffhp2b6oi3kiu3trnoo1502hg@group.calendar.google.com'+
-'/public/full?'+
-'alt=json-in-script'+
-'&callback=insertAgenda'+
-'&orderby=starttime'+
-'&singleevents=true'+
-'&sortorder=ascending'+
-'&futureevents=true';
-alert(OmmfCalendarUrl);
-
-ctrls.controller('ScheduleCtrl', function($scope, $http) {
-  $http({
-    method: 'GET',
-    url: OmmfCalendarUrl
-  }).success(function(data, status) {
-    // data contains the response
-    // status is the HTTP status
-    // headers is the header getter function
-    // config is the object that was used to create the HTTP request
-
-    
-
-    //$scope.accepteds = data.accepteds;
-
-  }).error(function(data, status, headers, config) {
-      // Some error occurred
-  });
-});
-*/
 
 ctrls.controller('ScheduleCtrl', function($scope, $http) {
     var calendarData = {};
@@ -107,13 +20,10 @@ ctrls.controller('ScheduleCtrl', function($scope, $http) {
             calendarData = data;
             calendarData.feed.entry.convertTime = function(time){
                 var s = new Date(time).toLocaleTimeString();
-                return s.substr(0,5) + s.substr(8,11)
+                return s.substr(0,5) + s.substr(8,11) + "";
             }
             $scope.entries = calendarData.feed.entry;
         });
-    
-
-
 });
 
 ctrls.controller('MapCtrl', function($scope) {
