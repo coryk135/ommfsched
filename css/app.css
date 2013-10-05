@@ -91,12 +91,17 @@ div.row > div {
   border: 1px solid grey;
   border-bottom: 0px !important;
 }
+.roundedTop{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 .detailsRight{
   background-color: white;
-  min-height: 200px !important;
+  /*min-height: 200px !important;*/
   border: 1px solid grey;
   padding-left: 40px;
   padding-right: 20px !important;
+  padding-bottom:20px;
 }
 
 
@@ -161,8 +166,9 @@ div.row > div {
 }
 
 .makerphoto{
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 80%;
+    max-width: 80%;
+    margin-bottom: 10px;
 }
 
 .mainContainer {
@@ -170,12 +176,55 @@ div.row > div {
 }
 
 .searchbar{
-  margin-top: 33px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
+
+.maker{
+  margin-top: 20px;
+  
+}
+.makerProjectTitle{
+  background-color: rgb(1, 142, 214);
+  color: white !important;
+  border: 1px solid grey;
+  border-bottom: 0px;
+}
+.makerProjectDetails{
+  padding-top: 20px;
+  border: 1px solid grey;
+}
+
+/*.navbar {
+  margin-bottom: 20px;
+}
+
+.shot .title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.stats {
+  background: #CCC;
+  opacity: 0.5;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.stats .stat {
+  padding: 5px;
+}
+
+.shot_image {
+  width: 100%;
+=======
 .marginTop33{
   margin-top: 33px;
+>>>>>>> 4816f6ee107be425aa80bf9788fd31bd060ece42
 }
 
 .info{
