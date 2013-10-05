@@ -199,11 +199,13 @@ div.row > div {
 .makerProjectDetails{
   padding-top: 20px;
   border: 1px solid grey;
+  padding-bottom: 10px;
 }
 
 #signUp.modal-header{
   background-color:rgb(1, 142, 214);
   color: white;
+  border-bottom: 1px solid grey;
 }
 
 
