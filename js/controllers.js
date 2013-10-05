@@ -27,6 +27,13 @@ ctrls.controller('AccordionDemoCtrl', function($scope) {
   };
 });
 
+ctrls.controller('navCtrl', function($scope, $location) {
+    $scope.isActive = function(route) {
+        console.log($location.path())
+        return route === $location.path();
+    }
+});
+
 /*
 ctrls.controller('ShotsListCtrl', function($scope, ommfshed, $routeParams) {
     var list = $routeParams.list;

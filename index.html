@@ -14,9 +14,9 @@
             padding-bottom: 20px;
         }
     </style>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-</head>
+</head>"
 <body ng-controller="AppCtrl">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -30,11 +30,11 @@
           <a class="navbar-brand" href="#">Orlando Mini Maker Faire 2013</a>
         </div>
         <div class="navbar-collapse collapse" style="height: 1px;">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#/schedule">Schedule</a></li>
-            <li><a href="#/map">Map</a></li>
-            <li><a href="#/makers">Makers</a></li>
-            <li><a href="#/info">Info</a></li>
+          <ul class="nav navbar-nav" ng-controller="navCtrl">
+            <li ng-class="{active:isActive('/schedule')}"><a href="#/schedule">Schedule</a></li>
+            <li ng-class="{active:isActive('/map')}"><a href="#/map">Map</a></li>
+            <li ng-class="{active:isActive('/makers')}"><a href="#/makers" >Makers</a></li>
+            <li ng-class="{active:isActive('/info')}"><a href="#/info" >Info</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -66,15 +66,11 @@
     <div class="container mainContainer">
         <div ng-view></div>
     </div>
-    
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- <script src="bower_components/angular/angular.min.js"></script> -->
-    <!-- <script src="bower_components/modernizr/modernizr.js"></script> -->
-    <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script> -->
-    <!--script src="bower_components/angular-ui-bootstrap/ui-bootstrap-tpls-0.6.0.js"></script-->
-     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"> </script>
-     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
