@@ -2,7 +2,7 @@
   <div class="row entriesRow boxShadow" ng-repeat="entry in entries | filter:event">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center timeLeft">
       <div class="row">
-        <p class="timeText {{ entry.custom_class }}">
+        <p class="timeText {{ entry.custom_class }}" ng-class="{{ entry.custom_class }}">
           <i class="glyphicon glyphicon-time"></i>
           {{ entries.getTime(entry.gd$when[0].startTime) }}
           -

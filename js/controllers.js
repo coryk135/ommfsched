@@ -19,6 +19,32 @@ ctrls.controller('ScheduleCtrl', function($scope, $http) {
             console.log(data.feed.entry[0]);
             calendarData = data;
 
+            var lazy = calendarData.feed.entry
+            
+            if(lazy != null){
+                for(var e in lazy){
+                    console.log(e);
+                    var happening = false;
+                    var over = false;
+                    var currTime = new Date();
+                    var startTime = new Date(lazy[e].gd$when[0].startTime);
+                    var endTime = new Date(lazy[e].gd$when[0].endTime);
+
+                    if(endTime < currTime){
+                        over = true;
+                    } else if(startTime < currTime){
+                        happening = true;
+                    }
+
+                    if(over){
+                        lazy[e].custom_class = 'event-over';
+                    } else if(happening){
+                        lazy[e].custom_class = 'event-happening';
+                    } else
+                        lazy[e].custom_class = '';
+                }
+            }
+
             calendarData.feed.entry.getTime = function(time){
                 var date = new Date(time);
                 var h = date.getHours();
@@ -47,31 +73,9 @@ ctrls.controller('ScheduleCtrl', function($scope, $http) {
                     return '';
                 }
             };
-            /*
-            var lazy = calendarData.feed.entry
-            if(lazy != null){
-                for(var e in lazy){
-                    var happening = false;
-                    var over = false;
-                    var currTime = new Date();
-                    var startTime = new Date(lazy[e].gd$when[0].startTime);
-                    var endTime = new Date(lazy[e].gd$when[0].endTime);
+            
 
-                    if(endTime < currTime){
-                        over = true;
-                    } else if(startTime < currTime){
-                        happening = true;
-                    }
-
-                    if(over){
-                        lazy[e].custom_class = 'event-over';
-                    } else if(happening){
-                        lazy[e].custom_class = 'event-happening';
-                    } else
-                        lazy[e].custom_class = '';
-                }
-            }
-            */
+            
             $scope.entries = calendarData.feed.entry; //list of entries
         });
 });

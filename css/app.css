@@ -208,53 +208,10 @@ div.row > div {
   border-bottom: 1px solid grey;
 }
 
+.event-over{
 
-/*.navbar {
-  margin-bottom: 20px;
 }
 
-.shot .title {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+.event-happening{
 
-
-.stats {
-  background: #CCC;
-  opacity: 0.5;
-  text-align: center;
-  padding: 4px 0;
-}
-
-.stats .stat {
-  padding: 5px;
-}
-
-.shot_image {
-  width: 100%;
-=======
-.marginTop33{
-  margin-top: 33px;
->>>>>>> 4816f6ee107be425aa80bf9788fd31bd060ece42
-}
-
-.info{
-  list-style-type: none;
-  padding: 0;
-}
-
-.info li{
-  margin-top: 15px;
-}
-
-.info li button{
-  width: 100%;
-}
-
-.maker{
-  padding: 10px;
-  margin-top: 20px;
-  border: 1px solid black;
 }
