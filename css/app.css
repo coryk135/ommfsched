@@ -7,6 +7,9 @@
 #titleText{
   color: white;
 }
+.timeText{
+  padding-top: 5px;
+}
 #logo{
   width: auto;
   height: 40px;
@@ -54,6 +57,7 @@ div.row > div {
   background-color: rgb(229, 227, 233) ;
   height: 100% !important;
   border: 1px solid grey;
+  border-bottom: 0px !important;
 }
 .detailsRight{
   background-color: white;
@@ -124,7 +128,7 @@ div.row > div {
     max-width: 300px;
 }
 .mainContainer {
-  margin-top: 20px;
+  margin-top: -13px;
 }
 
 /*.navbar {
