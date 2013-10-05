@@ -123,12 +123,22 @@ div.row > div {
 }
 
 .makerphoto{
-
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 100%;
+    max-width: 100%;
 }
+
 .mainContainer {
   margin-top: -13px;
+}
+
+.marg10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.maker{
+  margin-top: 20px;
+  border: 1px solid black;
 }
 
 /*.navbar {

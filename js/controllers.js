@@ -152,7 +152,10 @@ ctrls.controller('MakersCtrl', function($scope) {
         //   "about_url": ... ,
         //   "title": ...
     // }
-    
+    console.log(data.accepteds.photo_link);
+    $scope.showUrl = function(input) {
+           return input == '' ? 'assets/Orlando_MiniMF_FB-square.jpg' : input;
+    };
     $scope.accepteds = data.accepteds;
 });
 
