@@ -2,11 +2,11 @@
   <div class="row entriesRow" ng-repeat="entry in entries | filter:event">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center timeLeft">
       <div class="row">
-        <p class="timeText">
+        <p class="timeText {{ entry.custom_class }}">
           <i class="glyphicon glyphicon-time"></i>
-          {{ entries.convertTime(entry.gd$when[0].startTime) }}
+          {{ entries.getTime(entry.gd$when[0].startTime) }}
           -
-          {{ entries.convertTime(entry.gd$when[0].endTime) }}
+          {{ entries.getTime(entry.gd$when[0].endTime) }}
         </p>
       </div>
     </div>

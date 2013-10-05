@@ -18,11 +18,61 @@ ctrls.controller('ScheduleCtrl', function($scope, $http) {
         .success(function(data){
             console.log(data.feed.entry[0]);
             calendarData = data;
-            calendarData.feed.entry.convertTime = function(time){
-                var s = new Date(time).toLocaleTimeString();
-                return s.substr(0,5) + s.substr(8,11) + "";
+
+            calendarData.feed.entry.getTime = function(time){
+                var date = new Date(time);
+                var h = date.getHours();
+                var m = date.getMinutes();
+                if(m < 10) m = '' + "0" + m;
+                return ((h%12 + 1) + ":" + m);
+            };
+            calendarData.feed.entry.checkStartTime = function(time){
+                alert('event-active');
+                var currTime = new Date();
+                var startTime = new Date(time);
+                if(startTime < currTime){ // It's happening!
+                    return 'event-active';
+                } else{ 
+                    alert('event-active');
+                    return 'event-active';
+                }
+                
+            };
+            calendarData.feed.entry.checkEndTime = function(time){
+                var currTime = new Date();
+                var endTime = new Date(time);
+                if(endTime < currTime.getHours){ // It's over!
+                    return 'event-over';
+                } else {
+                    return '';
+                }
+            };
+            /*
+            var lazy = calendarData.feed.entry
+            if(lazy != null){
+                for(var e in lazy){
+                    var happening = false;
+                    var over = false;
+                    var currTime = new Date();
+                    var startTime = new Date(lazy[e].gd$when[0].startTime);
+                    var endTime = new Date(lazy[e].gd$when[0].endTime);
+
+                    if(endTime < currTime){
+                        over = true;
+                    } else if(startTime < currTime){
+                        happening = true;
+                    }
+
+                    if(over){
+                        lazy[e].custom_class = 'event-over';
+                    } else if(happening){
+                        lazy[e].custom_class = 'event-happening';
+                    } else
+                        lazy[e].custom_class = '';
+                }
             }
-            $scope.entries = calendarData.feed.entry;
+            */
+            $scope.entries = calendarData.feed.entry; //list of entries
         });
 });
 
