@@ -4,7 +4,6 @@ var app = angular.module('ommfsched', [
     'ommfsched.controllers',
     'ommfsched.filters',
     'ommfsched.services',
-    'ui.bootstrap',
 ]);
 
 app.config(function($routeProvider){
