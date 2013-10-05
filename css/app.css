@@ -164,6 +164,11 @@ div.row > div {
 .calendarcard p{
     color: white;
 }
+.modal-header{
+  background-color: rgb(1, 142, 214);
+  color: white;
+}
+
 
 .makerphoto{
     max-height: 80%;
@@ -194,7 +199,15 @@ div.row > div {
 .makerProjectDetails{
   padding-top: 20px;
   border: 1px solid grey;
+  padding-bottom: 10px;
 }
+
+#signUp.modal-header{
+  background-color:rgb(1, 142, 214);
+  color: white;
+  border-bottom: 1px solid grey;
+}
+
 
 /*.navbar {
   margin-bottom: 20px;
