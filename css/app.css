@@ -1,6 +1,17 @@
 .nav, .pagination, .carousel a { 
   cursor: pointer; 
 }
+.navigation{
+  background-color: rgb(160, 224, 249) !important;
+}
+#titleText{
+  color: white;
+}
+#logo{
+  width: auto;
+  height: 40px;
+  margin-top: -10px;
+}
 a {
   color: red;
 }
@@ -35,11 +46,22 @@ div.row > div {
   margin-bottom: 0px;
   height: auto;
 }
-
-.timeArea {
-  border-right: 1px solid #F00;
+.entriesRow{
+  margin-top: 20px;
 }
 
+.timeLeft{
+  background-color: rgb(229, 227, 233) ;
+  height: 100% !important;
+  border: 1px solid grey;
+}
+.detailsRight{
+  background-color: white;
+  min-height: 200px !important;
+  border: 1px solid grey;
+  padding-left: 40px;
+  padding-right: 10px;
+}
 .bump{
     margin-left: 15px
 }
