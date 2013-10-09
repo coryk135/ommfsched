@@ -229,12 +229,16 @@ div.row > div {
 }
 
 .info {
-  margin-top: 20px;
+  margin-top: 30px;
   list-style-type: none;
+  padding: 0;
 }
-
 
 .info li {
   list-style-type: none;
   margin-bottom: 2px;
+}
+
+.info li button {
+  width: 100%;
 }
