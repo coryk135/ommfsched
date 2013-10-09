@@ -3,6 +3,9 @@
 var ctrls = angular.module('ommfsched.controllers', []);
 
 ctrls.controller('AppCtrl', function($scope, $http) {
+    $('.nav a').on('click', function(){
+        $(".btn-navbar").click();
+    });
 });
 
 ctrls.controller('navCtrl', function($scope, $location) {
