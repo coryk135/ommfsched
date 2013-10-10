@@ -15,13 +15,17 @@
   background: #cc0000;
 }
 
+.active a {
+  color: white;
+}
+
 .nav li a:focus{
   background-color: #cc0000 !important;
   color: white;
 }
 .nav li a:hover{
   color: white;
-  background-color: #cc0000 !important;
+  background-color: #ff4444 !important;
 }
 #titleText{
   color: white;
